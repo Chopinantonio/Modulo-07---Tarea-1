@@ -16,12 +16,13 @@ setupYScale();
 appendXAxis();
 appendYAxis();
 appendChartBars();
+appendLegend();
 
 // 1. let's start by selecting the SVG Node
 function setupCanvasSize() {
   margin = {top: 0, left: 80, bottom: 20, right: 30};
-  width = 960 - margin.left - margin.right;
-  height = 120 - margin.top - margin.bottom;
+  width = 500 - margin.left - margin.right;
+  height = 400 - margin.top - margin.bottom;
 }
 
 function appendSvg(domElement) {
@@ -111,3 +112,16 @@ function appendChartBars()
           return barColor(d.product)});
 }
 
+// Now it´s time to introduce de lenged to this graph.
+// function appendLegend() {
+//   svg.append('g')
+//     .attr('class', 'legend')
+//       .selectAll('text')
+//       .data(totalSales)
+//         .enter()
+//           .append('text')
+//             .text(function(d) { return '• ' + d.product; })
+//             .attr('fill', function(d) { return color(d.product); })
+//             .attr('y', function(d, i) { return 20 * (i + 1); }) 
+//             .attr('x',function(d,i){ return 20*(i+1); }) 
+// }

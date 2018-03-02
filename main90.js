@@ -14,11 +14,12 @@ setupYScale();
 appendXAxis();
 appendYAxis();
 appendChartBars();
+appendLegend()
 
 // 1. let's start by selecting the SVG Node
 function setupCanvasSize() {
-  margin = {top: 100, left: 180, bottom: 120, right: 130};
-  width = 960 - margin.left - margin.right;
+  margin = {top: 50, left: 80, bottom: 120, right: 130};
+  width = 700 - margin.left - margin.right;
   height = 800 - margin.top - margin.bottom;
 }
 
@@ -111,3 +112,18 @@ function appendChartBars()
           return barColor(d.product)});
 }
 
+
+
+
+// function appendLegend() {
+//   svg.append('g')
+//     .attr('class', 'legend')
+//       .selectAll('text')
+//       .data(totalSales)
+//         .enter()
+//           .append('text')
+//             .text(function(d) { return '• ' + d.product; })
+//             .attr('fill', function(d) { return color(d.product); })
+//             .attr('y', function(d, i) { return 20 * (i + 1); }) 
+//             .attr('x',function(d,i){ return 7 * (i+35); }) 
+// }
