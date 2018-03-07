@@ -14,7 +14,7 @@ setupYScale();
 appendXAxis();
 appendYAxis();
 appendChartBars();
-appendLegend()
+appendLegend();
 
 // 1. let's start by selecting the SVG Node
 function setupCanvasSize() {
@@ -77,6 +77,7 @@ function appendChartBars()
 {
   // 2. Now let's select all the rectangles inside that svg
   // (right now is empty)
+  var divTooltip = d3.select("body").append("div").attr("class", "toolTip");
   var rects = svg.selectAll('rect')
     .data(totalSales);
 
@@ -93,8 +94,6 @@ function appendChartBars()
     //           we just pass the sales and use the X axis conversion to
     //           get the right value
 
-    var barColor = d3.scaleOrdinal(d3.schemeCategory10);
-
     newRects.append('rect')
       .attr('x',function(d,i){
           return x(d.product);
@@ -108,22 +107,34 @@ function appendChartBars()
       .attr('width', function(d,i){
         return x.bandwidth() -10;
       })
-      .attr('fill',function(d){
-          return barColor(d.product)});
+      .style('fill', function(d, i) {
+        return d.color
+    });
+}
+
+function appendLegend()
+{
+    var legend = svg.selectAll('.legend')
+        .data(totalSales)
+        .enter()
+        .append('g')
+        .attr('class', 'legend')
+        .attr('transform', function(d, i) { 
+                return "translate(20," + i * 25 + ")"; 
+            });
+    legend.append('rect')
+        .attr('x', width - 19)
+        .attr('width', 19)
+        .attr('height', 19)
+        .style('fill', function(d, i) { return d.color;})
+        .style('stroke', function(d, i) { return d.color;});
+
+    legend.append('text')
+        .attr('x', width)
+        .attr('y', 9.5)
+        .attr("dy", "0.32em")
+        .text(function(d) { return d.product; });
 }
 
 
 
-
-// function appendLegend() {
-//   svg.append('g')
-//     .attr('class', 'legend')
-//       .selectAll('text')
-//       .data(totalSales)
-//         .enter()
-//           .append('text')
-//             .text(function(d) { return '• ' + d.product; })
-//             .attr('fill', function(d) { return color(d.product); })
-//             .attr('y', function(d, i) { return 20 * (i + 1); }) 
-//             .attr('x',function(d,i){ return 7 * (i+35); }) 
-// }
