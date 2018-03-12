@@ -57,6 +57,7 @@ Finally, we are going to add a legend to our graph. The next function will be us
 
 Firstly, a new group has been created in the svg and a transformation has been used to correctly place the legend in the body. Finally, you have to relate each product with its respective rect and the text corresponding to that product.
 
+## THE END -- José Antonio Montes Cervantes
 
 
 
