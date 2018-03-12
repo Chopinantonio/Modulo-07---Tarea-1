@@ -29,22 +29,22 @@ In this case, we have to define the X axis like the Y axis was defined before, a
 ![alt text](https://github.com/Chopinantonio/Modulo-07---Tarea-1/blob/master/Pictures/Rotate.png)
 
 
-Once the graph rotated, let´s add some space between. In this case the solution is easier, let´s see it:
+Once the graph rotated, let´s add some space between the rects. In this case the solution is easier, let´s see it:
 
 
 ![alt text](https://github.com/Chopinantonio/Modulo-07---Tarea-1/blob/master/Pictures/Space%20between%20Rects.png)
 
 
-When the width of the width of the band is defined, we have to add the distance that will be between each band.
+When the width of the band is defined, we have to add the distance that will be between each band.
 
-After that, it´s time to add different colors to each product. In the data.js document, we have created a variable for each product called color in which we have defined a different color for each product. 
+After that, it´s time to add different colours to graph. In the data.js document, we have created a variable for each product called "color" in which we have defined different colours for each product. 
 
 
 ![alt text](https://github.com/Chopinantonio/Modulo-07---Tarea-1/blob/master/Pictures/Data%20Color.png)
 
 
 Now we want to fill the rects with their colours. In order to obtaint that, when the rects have been created, we defined a new attribute 
-about style which returns the color for each product. 
+about style which returns the colour for each product. 
 
 
 ![alt text](https://github.com/Chopinantonio/Modulo-07---Tarea-1/blob/master/Pictures/Rects%20Color.png)
