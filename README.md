@@ -13,10 +13,11 @@ We will start with the following one and we will change some things in order to 
 
 ![alt text](https://github.com/Chopinantonio/Modulo-07---Tarea-1/blob/master/Pictures/Original.png)
 
+Let's see the steps that must be followed to obtain the graph that is requested in the task from this one:
 
 ## Steps
 
-Firstly, , let's show the bar chart vertically. We will use the following code fragment and we will change some things in order to achieve it:
+Firstly, let's show the bar chart vertically. We will use the following code fragment and we will change some things in order to achieve it:
 
 
 ![alt text](https://github.com/Chopinantonio/Modulo-07---Tarea-1/blob/master/Pictures/CodeToChangeXY.png)
@@ -53,6 +54,8 @@ Finally, we are going to add a legend to our graph. The next function will be us
 
 
 ![alt text](https://github.com/Chopinantonio/Modulo-07---Tarea-1/blob/master/Pictures/Legend.png)
+
+Firstly, a new group has been created in the svg and a transformation has been used to correctly place the legend in the body. Finally, you have to relate each product with its respective rect and the text corresponding to that product.
 
 
 
