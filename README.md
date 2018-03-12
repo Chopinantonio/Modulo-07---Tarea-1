@@ -23,7 +23,7 @@ Firstly, let's show the bar chart vertically. We will use the following code fra
 ![alt text](https://github.com/Chopinantonio/Modulo-07---Tarea-1/blob/master/Pictures/CodeToChangeXY.png)
 
 
-In this case, we have to define the X axis like the Y axis was defined before, and the Y axis like the X axis was. Now, in X axis, we use a linear scale in order to insert every product name. Also, since we want the total number of sales to be on the Y axis, a linear scale will be used on that axis to enter the sales data. Let´s see the code created to solve this matter:
+In this case, we have to define the X axis like the Y axis was defined before, and the Y axis like the X axis was. Now, in X axis, we use a linear scale in order to insert every product name. Also, since we want the total number of sales to be on the Y axis, a linear scale will be used on that axis to enter the sales data. The domains have been changed too. Let´s see the code created to solve this matter:
 
 
 ![alt text](https://github.com/Chopinantonio/Modulo-07---Tarea-1/blob/master/Pictures/Rotate.png)
