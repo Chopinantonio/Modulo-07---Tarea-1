@@ -43,7 +43,7 @@ After that, it´s time to add different colours to the bands. In the #####data.j
 ![alt text](https://github.com/Chopinantonio/Modulo-07---Tarea-1/blob/master/Pictures/Data%20Color.png)
 
 
-Now we want to fill the rects with their colours. In order to obtaint that, when the rects are being created, we defined a new attribute 
+Now we want to fill the rects with their colours. In order to obtaint that, when the rectangles are being created, we defined a new attribute 
 about style which returns the colour for each band. 
 
 
