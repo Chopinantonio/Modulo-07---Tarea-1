@@ -17,7 +17,7 @@ Let's see the steps that must be followed to obtain the graph that is requested 
 
 ## Steps
 
-Firstly, let's show the bar chart vertically. We will use the following code fragment and we will change some things in order to achieve it:
+Firstly, let's show the barchart vertically. We will use the following code fragment and we will change some things in order to achieve it:
 
 
 ![alt text](https://github.com/Chopinantonio/Modulo-07---Tarea-1/blob/master/Pictures/CodeToChangeXY.png)
