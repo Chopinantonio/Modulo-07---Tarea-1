@@ -37,7 +37,7 @@ Once the graph rotated, let´s add some space between the rects. In this case th
 
 When the width of the band is defined, we have to add the distance that will be between each band.
 
-After that, it´s time to add different colours to the bands. In the data.js document, we have created a  new variable called "color" in which we have defined different colours for each product. 
+After that, it´s time to add different colours to the bands. In the #####data.js document, we have created a  new variable called "color" in which we have defined different colours for each product. 
 
 
 ![alt text](https://github.com/Chopinantonio/Modulo-07---Tarea-1/blob/master/Pictures/Data%20Color.png)
