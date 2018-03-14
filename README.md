@@ -37,25 +37,25 @@ Once the graph rotated, let´s add some space between the rects. In this case th
 
 When the width of the band is defined, we have to add the distance that will be between each band.
 
-After that, it´s time to add different colours to graph. In the data.js document, we have created a variable for each product called "color" in which we have defined different colours for each product. 
+After that, it´s time to add different colours to the bands. In the data.js document, we have created a  new variable called "color" in which we have defined different colours for each product. 
 
 
 ![alt text](https://github.com/Chopinantonio/Modulo-07---Tarea-1/blob/master/Pictures/Data%20Color.png)
 
 
-Now we want to fill the rects with their colours. In order to obtaint that, when the rects have been created, we defined a new attribute 
-about style which returns the colour for each product. 
+Now we want to fill the rects with their colours. In order to obtaint that, when the rects are being created, we defined a new attribute 
+about style which returns the colour for each band. 
 
 
 ![alt text](https://github.com/Chopinantonio/Modulo-07---Tarea-1/blob/master/Pictures/Rects%20Color.png)
 
 
-Finally, we are going to add a legend to our graph. The next function will be used:
+Finally, we add a legend to our graph. The next function will be used:
 
 
 ![alt text](https://github.com/Chopinantonio/Modulo-07---Tarea-1/blob/master/Pictures/Legend.png)
 
-Firstly, a new group has been created in the svg and a transformation has been used to correctly place the legend in the body. Finally, you have to relate each product with its respective rect and the text corresponding to that product.
+Firstly, a new group is created in the svg and a transformation is used to correctly place the legend in the body. Finally, each product has to be related with its respective rect and the text corresponding to that product.
 
 ## THE END -- José Antonio Montes Cervantes
 
